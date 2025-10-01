@@ -1,0 +1,33 @@
+wine GuessyMan.exe
+≡ƒÄ» Welcome to the Number Guessing CTF Challenge! ≡ƒÄ»
+==================================================
+I'm thinking of a number between 1 and 100.
+Guess correctly to decrypt the flag!
+
+Attempt 1/7: Enter your guess (1-100): 40
+Too low! Try higher.
+You have 6 attempts remaining.
+
+Attempt 2/7: Enter your guess (1-100): 60
+Too low! Try higher.
+You have 5 attempts remaining.
+
+Attempt 3/7: Enter your guess (1-100): 80
+Too high! Try lower.
+You have 4 attempts remaining.
+
+Attempt 4/7: Enter your guess (1-100): 75
+Too low! Try higher.
+You have 3 attempts remaining.
+
+Attempt 5/7: Enter your guess (1-100): 78
+Too high! Try lower.
+You have 2 attempts remaining.
+
+Attempt 6/7: Enter your guess (1-100): 76
+
+≡ƒÄë Congratulations! You guessed it! ≡ƒÄë
+The secret number was: 76
+
+≡ƒÜ⌐ FLAG DECRYPTED: FlagY{a01b1ac2858ec221d87a015d9f85837f} ≡ƒÜ⌐
+
