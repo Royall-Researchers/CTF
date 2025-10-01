@@ -1,0 +1,34 @@
+(async () => {
+  // 🔹 Paste your wordlist here (you already have it from payload)
+  const words = "satisfied same soft difference opposite tomorrow hurry few drive beginning religious will production nails feed brass gentle other anywhere naturally eager thumb call also live song leader farm almost line mouth doing even largest value afraid enter weight fell shadow some element ride studied principle lack gravity paper broad tin type".split(" ");
+
+  // 🔹 Locate input box
+  const input = document.querySelector("input, textarea");
+
+  // 🔹 Function to simulate typing of one character
+  async function typeChar(ch, delay) {
+    input.value += ch;
+
+    input.dispatchEvent(new Event("input", { bubbles: true }));
+    input.dispatchEvent(new KeyboardEvent("keydown", { key: ch, bubbles: true }));
+    input.dispatchEvent(new KeyboardEvent("keypress", { key: ch, bubbles: true }));
+    input.dispatchEvent(new KeyboardEvent("keyup", { key: ch, bubbles: true }));
+
+    await new Promise(r => setTimeout(r, delay));
+  }
+
+  // 🔹 Function to type each word in order
+  async function typeWords(words, delay = 15) {
+    for (let w of words) {
+      for (let ch of w) {
+        await typeChar(ch, delay);
+      }
+      await typeChar(" ", delay); // type space after word
+    }
+  }
+
+  console.log("Typing payload in order:", words.join(" "));
+  await typeWords(words, 15); // ~15ms per char ≈ 500 WPM
+  console.log("✅ Finished typing at ~500 WPM!");
+})();
+
