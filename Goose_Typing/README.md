@@ -8,9 +8,9 @@
 
 ## Usage
 
-- 1.Open the target page in browser
-- 2.Focus input area then paste the program in console directly
+  - 1.Open the target page in browser
+  - 2.Focus input area then paste the program in console directly
 
--- It can automatically type the character
+- It can automatically type the character
 
--- Note : The sentence are words you must changed in the program
+- Note : The sentence are words you must changed in the program
