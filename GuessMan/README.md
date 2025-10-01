@@ -6,7 +6,7 @@
 
 - 1.Computer Randomly selects a number between 1 to 100
 - 2.Player makes Guesses until the number is found
-- 3. Hint are:
+- 3.Hint are:
   - "Too Low" ==> your guess is smaller than secret number
   - "Too High"==> your guess is too high
   - "Correct" ==> flag is flag{#####}
