@@ -1,11 +1,10 @@
 (async () => {
-  // 🔹 Paste your wordlist here (you already have it from payload)
-  const words = "satisfied same soft difference opposite tomorrow hurry few drive beginning religious will production nails feed brass gentle other anywhere naturally eager thumb call also live song leader farm almost line mouth doing even largest value afraid enter weight fell shadow some element ride studied principle lack gravity paper broad tin type".split(" ");
 
-  // 🔹 Locate input box
+  const words = "### which content you need to type fast on the page".split(" ");  // you must change it please
+
+  //  Locate input box or text area
   const input = document.querySelector("input, textarea");
 
-  // 🔹 Function to simulate typing of one character
   async function typeChar(ch, delay) {
     input.value += ch;
 
@@ -17,7 +16,6 @@
     await new Promise(r => setTimeout(r, delay));
   }
 
-  // 🔹 Function to type each word in order
   async function typeWords(words, delay = 15) {
     for (let w of words) {
       for (let ch of w) {
@@ -28,7 +26,7 @@
   }
 
   console.log("Typing payload in order:", words.join(" "));
-  await typeWords(words, 15); // ~15ms per char ≈ 500 WPM
+  await typeWords(words, 15); // ~15ms per char ≈ 500 WPM . It can be change with the requirements
   console.log("✅ Finished typing at ~500 WPM!");
 })();
 
