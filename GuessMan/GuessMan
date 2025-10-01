@@ -1,4 +1,4 @@
-wine GuessyMan.exe
+$ wine GuessyMan.exe
 ≡ƒÄ» Welcome to the Number Guessing CTF Challenge! ≡ƒÄ»
 ==================================================
 I'm thinking of a number between 1 and 100.
@@ -29,5 +29,5 @@ Attempt 6/7: Enter your guess (1-100): 76
 ≡ƒÄë Congratulations! You guessed it! ≡ƒÄë
 The secret number was: 76
 
-≡ƒÜ⌐ FLAG DECRYPTED: FlagY{a01b1ac2858ec221d87a015d9f85837f} ≡ƒÜ⌐
+≡ƒÜ⌐ FLAG DECRYPTED: Flag{#############################} ≡ƒÜ⌐
 
