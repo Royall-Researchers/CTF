@@ -1,6 +1,6 @@
-##Guess Man Challenges
+## Guess Man Challenges
 
-#A tiny Guessing Game micro-challenge.
+# A tiny Guessing Game micro-challenge.
 
 ## How it works
 
